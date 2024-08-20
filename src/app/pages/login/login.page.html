@@ -1,0 +1,43 @@
+<ion-content fullscreen>
+  <div class="login-container">
+    <img src="../../assets/img/dosecat.webp" alt="Avatar" class="avatar-img" />
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Login</ion-card-title>
+        <ion-card-subtitle>Ingresa tus credenciales</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-item>
+          <ion-input 
+            label="Usuario" 
+            labelPlacement="floating" 
+            [(ngModel)]="username" 
+            placeholder="Ingrese su usuario"
+            required>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input 
+            label="Contraseña" 
+            labelPlacement="floating" 
+            [(ngModel)]="password" 
+            type="password" 
+            placeholder="Ingrese su contraseña"
+            required>
+          </ion-input>
+        </ion-item>
+      </ion-card-content>
+
+      <ion-button 
+        color="dark" 
+        expand="full" 
+        (click)="login()">
+        Ingresar
+      </ion-button>
+    </ion-card>
+  </div>
+</ion-content>
+
+
